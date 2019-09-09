@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>OptimizedHTML 5</title>
+  <meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="icon" href="img/favicon.png">
+  <meta property="og:image" content="img/@1x/preview.jpg">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/news.css">
+
+</head>
+
+<body>
+
+<div class="popup">
+  <div class="popup-overlay"></div>
+  <form action="" class="popup-form popup-make-payment">
+    <div class="popup-form-close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.3327 2.54663L17.4527 0.666626L9.99935 8.11996L2.54602 0.666626L0.666016 2.54663L8.11935 9.99996L0.666016 17.4533L2.54602 19.3333L9.99935 11.88L17.4527 19.3333L19.3327 17.4533L11.8793 9.99996L19.3327 2.54663Z" fill="#919FAE"/>
+      </svg>
+    </div>
+    <h2>Сделать пожертвование</h2>
+    <div class="popup-make-payment-tab">
+      <div class="popup-make-payment-tab-item active"><span>Публично</span></div>
+      <div class="popup-make-payment-tab-item popup-make-payment-tab-item-anonymous"><span>Анонимно</span></div>
+    </div>
+    <label for="name">
+      <p>Имя</p>
+      <input type="text" id="name" placeholder="Введите ваше имя" required>
+    </label>
+    <label for="email">
+      <p>E-mail</p>
+      <input type="email" id="email" placeholder="Введите ваш e-mail" required>
+    </label>
+    <label for="email">
+      <p>E-mail</p>
+      <input type="email" id="email" placeholder="Введите ваш e-mail" required>
+    </label>
+    <input class="input-price">
+    <div id="popup-make-payment-range-price"></div>
+    <div class="popup-make-payment-price">
+      <div class="popup-make-payment-price-min">От 10 грн</div>
+      <div class="popup-make-payment-price-max">До 1 000 000 грн</div>
+    </div>
+    <div class="button-main-wrap">
+      <button class="button-main">Перейти к оплате</button>
+    </div>
+  </form>
+  <form action="" class="popup-form popup-ask-for-help">
+    <div class="popup-form-close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.3327 2.54663L17.4527 0.666626L9.99935 8.11996L2.54602 0.666626L0.666016 2.54663L8.11935 9.99996L0.666016 17.4533L2.54602 19.3333L9.99935 11.88L17.4527 19.3333L19.3327 17.4533L11.8793 9.99996L19.3327 2.54663Z" fill="#919FAE"/>
+      </svg>
+    </div>
+    <h2>Запрос помощи</h2>
+    <p class="h2-bottom">Шаг 1</p>
+    <label for="name">
+      <p>Имя</p>
+      <input type="text" id="name" placeholder="Введите ваше имя" required>
+    </label>
+    <label for="surname">
+      <p>Фамилия</p>
+      <input type="text" id="surname" placeholder="Введите вашу фамилию" required>
+    </label>
+    <label for="email">
+      <p>E-mail</p>
+      <input type="email" id="email" placeholder="Введите ваш e-mail" required>
+    </label>
+    <label for="phone">
+      <p>Телефон</p>
+      <input type="text" id="phone" placeholder="Введите ваш телефон" required>
+    </label>
+    <label for="passport" class='passport'>
+      <p>Паспорт</p>
+      <div>
+        <div>
+          <input type="radio" id="passport-book" name="passport" value="passport-book" class="checkbox" 
+             checked>
+             <span class="checkmark"></span>
+          <label for="passport-book">В виде книжки</label>
+        </div>
+        <div>
+          <input type="radio" id="passport-id" name="passport" value="passport-id" class="checkbox" >
+          <span class="checkmark"></span>
+          <label for="passport-id">В виде карточки ID</label>
+        </div>
+      </div>  
+      <div>
+        <input type="text" id="passport" placeholder="Номер паспорта" required>
+      </div>  
+    </label>
+    <div class="button-main-wrap">
+      <button class="button-main">Далее</button>
+    </div>
+  </form>
+</div>
+
+  <section class="first-screen">
+    <div class="container">
+      <header class="main-header">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/@2x/logo-header.png" alt="Solidarnost">
+        </a>
+                <div class="main-header-menu-mobile-open">
+                    <span></span>
+                </div>
+        <div class="main-header-menu">
+          <nav class="main-header-nav">
+            <ul>
+              <li><a href="needhelp.html">Нужна помощь</a></li>
+              <li><a href="promotions.html">Акции фонда</a></li>
+              <li><a class="active" href="news.html">Новости</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+          </nav>
+                  <label  class="search-line" for="site-search">
+                    <span class="svg-button">
+                      <svg class="svg-search" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#0C1132"/>
+              </svg>
+            </span>
+            <span class="svg-button">
+              <svg class="svg-close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3327 2.54663L17.4527 0.666626L9.99935 8.11996L2.54602 0.666626L0.666016 2.54663L8.11935 9.99996L0.666016 17.4533L2.54602 19.3333L9.99935 11.88L17.4527 19.3333L19.3327 17.4533L11.8793 9.99996L19.3327 2.54663Z" fill="#919FAE"/>
+              </svg>
+            </span>
+
+                        <input type="search" id="site-search" name="q" placeholder="Поиск...">
+                    </label>
+          <div class="select-lang">
+            <div class="select-lang-item"><img src="img/@2x/rus.png" alt="rus"><span>Рус</span><svg class="select-lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 1.88125L6.00008 7.58836L11.7072 1.88125L10.1191 0.293213L6.28806 4.11744L6.00008 4.35651L5.71209 4.11744L1.88101 0.293213L0.292969 1.88125Z" fill="#0C1132"/></svg></div>
+            <div class="select-lang-hidden">
+              <a href="#" class="select-lang-item"><img src="img/@2x/ukr.png" alt="ukr"><span>Укр</span></a>
+              <a href="#" class="select-lang-item"><img src="img/@2x/eng.png" alt="eng"><span>Eng</span></a>
+            </div>
+          </div>
+          <a href="#" class="button-main open-popup-needhelp">Запрос помощи</a>
+        </div>
+      </header>
+      <div class="main-header-menu-mobile">
+                <div class="container">
+                    <div class="main-header-menu-mobile-wrapper">
+                        <label for="site-search">
+                        <input type="search" id="site-search" name="q" placeholder="Поиск...">
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#0C1132"/>
+                            </svg>
+                        </button>
+                        </label>
+                        <nav class="main-header-nav">
+                            <ul>
+                                <li><a href="needhelp.html">Нужна помощь</a></li>
+                                <li><a href="promotions.html">Акции фонда</a></li>
+                                <li><a class="active" href="news.html">Новости</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="gallery.html">Галерея</a></li>
+                            </ul>
+                        </nav>
+                        <div class="select-lang">
+                            <div class="select-lang-item"><img src="img/@2x/rus.png" alt="rus"><span>Рус</span><svg class="select-lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 1.88125L6.00008 7.58836L11.7072 1.88125L10.1191 0.293213L6.28806 4.11744L6.00008 4.35651L5.71209 4.11744L1.88101 0.293213L0.292969 1.88125Z" fill="#0C1132"/></svg></div>
+                            <div class="select-lang-hidden">
+                                <a href="#" class="select-lang-item"><img src="img/@2x/ukr.png" alt="ukr"><span>Укр</span></a>
+                                <a href="#" class="select-lang-item"><img src="img/@2x/eng.png" alt="eng"><span>Eng</span></a>
+                            </div>
+                        </div>
+                        <a href="#" class="button-main open-popup-needhelp">Запрос помощи</a>
+                    </div>
+                </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section-all news-section">
+  <div class="container">
+    <div class="section-crumbs">
+      <a href="index.html">Главная</a> / <span>Новости</span>
+    </div>
+    <h1>Новости</h1>
+    <div class="news-filters">
+      <div class="news-filters-item active">Все</div>
+      <div class="news-filters-item">Эксклюзив</div>
+      <div class="news-filters-item">Днепр</div>
+      <div class="news-filters-item">ПЦУ</div>
+      <div class="news-filters-item">Общество</div>
+      <div class="news-filters-item">Спорт</div>
+    </div>
+    <div class="news-top">
+      <div class="news-top-video">
+
+      </div>
+      <div class="news-top-popular">
+        <h2>Популярные за месяц</h2>
+        <a href="news-single.html" class="news-top-popular-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-top-popular-item-body">
+            <span class="news-top-popular-item-date">24.08.19</span>
+            <h3>В Днепре прошел Фестиваль грузинской культуры - 2019.</h3>
+          </span>
+        </a>
+        <a href="news-single.html" class="news-top-popular-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-top-popular-item-body">
+            <span class="news-top-popular-item-date">24.08.19</span>
+            <h3>В Днепре прошел Фестиваль грузинской культуры - 2019.</h3>
+          </span>
+        </a>
+        <a href="news-single.html" class="news-top-popular-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-top-popular-item-body">
+            <span class="news-top-popular-item-date">24.08.19</span>
+            <h3>В Днепре прошел Фестиваль грузинской культуры - 2019.</h3>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date news-item-exclusive">Эксклюзив</span>
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <a href="news-single.html" class="news-item">
+          <img src="img/@2x/promotions/image.jpg" alt="">
+          <span class="news-item-body">
+              <span class="news-item-date">24.08.19</span>
+              <h3>Новая удобная мебель в подарок для воспитанников Днепровского дома...</h3>
+            </span>
+        </a>
+      </div>
+    </div>
+    <div class="pagination-wrapper">
+      <a href="#" class="pagination-button pagination-button-left">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 0L9.41 1.41L3.83 7H16V9H3.83L9.41 14.59L8 16L0 8L8 0Z" fill="#919FAE"/>
+        </svg>
+      </a>
+      <a href="#" class="pagination-button active"><span>1</span></a>
+      <a href="#" class="pagination-button"><span>2</span></a>
+      <a href="#" class="pagination-button"><span>3</span></a>
+      <a href="#" class="pagination-button pagination-button-right">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="#919FAE"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <nav class="main-footer-nav">
+        <a href="#" class="main-footer-logo">
+          <img src="img/@2x/logo-header.png" alt="Solidarnost">
+        </a>
+        <div>
+          <h6>Основное</h6>
+          <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="about.html">Контакты</a></li>
+            <li><a href="ukraine.html">Вся Украина</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Нужна помощь</h6>
+          <ul>
+            <li><a href="needhelp.html">Дети</a></li>
+            <li><a href="needhelp.html">АТО</a></li>
+            <li><a href="needhelp.html">Лечение</a></li>
+            <li><a href="needhelp.html">Спорт</a></li>
+            <li><a href="needhelp.html">Образование</a></li>
+            <li><a href="needhelp.html">Культура</a></li>
+            <li><a href="needhelp.html">Медицина</a></li>
+            <li><a href="needhelp.html">Разное</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Акции фонда</h6>
+          <ul>
+            <li><a href="promotions.html">2019</a></li>
+            <li><a href="promotions.html">2018</a></li>
+            <li><a href="promotions.html">2017</a></li>
+            <li><a href="promotions.html">2016</a></li>
+            <li><a href="promotions.html">2015</a></li>
+            <li><a href="promotions.html">2014</a></li>
+            <li><a href="promotions.html">2013</a></li>
+            <li><a href="promotions.html">2012</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Новости</h6>
+          <ul>
+            <li><a href="news.html">Днепр</a></li>
+            <li><a href="news.html">ПЦУ</a></li>
+            <li><a href="news.html">Общество</a></li>
+            <li><a href="news.html">Спорт</a></li>
+            <li><a href="news.html">Эксклюзив</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Соцсети</h6>
+          <ul class="socials">
+            <li><a href="https://www.facebook.com/mbfsolidarnost/">
+              <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4058 0.00416134L7.81228 0C4.89851 0 3.01551 1.9319 3.01551 4.92203V7.19141H0.407811C0.182475 7.19141 0 7.37409 0 7.59943V10.8875C0 11.1128 0.182683 11.2953 0.407811 11.2953H3.01551V19.5922C3.01551 19.8175 3.19798 20 3.42332 20H6.82563C7.05096 20 7.23344 19.8173 7.23344 19.5922V11.2953H10.2824C10.5078 11.2953 10.6903 11.1128 10.6903 10.8875L10.6915 7.59943C10.6915 7.49123 10.6484 7.38762 10.5721 7.31105C10.4957 7.23448 10.3917 7.19141 10.2835 7.19141H7.23344V5.26763C7.23344 4.34298 7.45378 3.87358 8.65828 3.87358L10.4054 3.87295C10.6305 3.87295 10.813 3.69027 10.813 3.46514V0.411972C10.813 0.187052 10.6308 0.00457747 10.4058 0.00416134Z" fill="#3166BF"/>
+              </svg>
+            </a></li>
+            <li><a href="https://www.instagram.com/mbf_solidarity/">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4481 0H6.36436C3.07904 0 0.40625 2.67279 0.40625 5.95811V14.0419C0.40625 17.3272 3.07904 20 6.36436 20H14.4481C17.7335 20 20.4062 17.3272 20.4062 14.0419V5.95811C20.4062 2.67279 17.7334 0 14.4481 0ZM18.3943 14.0419C18.3943 16.2213 16.6275 17.988 14.4481 17.988H6.36436C4.185 17.988 2.41825 16.2213 2.41825 14.0419V5.95811C2.41825 3.77871 4.185 2.012 6.36436 2.012H14.4481C16.6275 2.012 18.3943 3.77871 18.3943 5.95811V14.0419Z" fill="#3166BF"/>
+                <path d="M10.4061 4.82715C7.55387 4.82715 5.2334 7.14762 5.2334 9.99982C5.2334 12.852 7.55387 15.1725 10.4061 15.1725C13.2583 15.1725 15.5788 12.8521 15.5788 9.99982C15.5788 7.14759 13.2583 4.82715 10.4061 4.82715ZM10.4061 13.1606C8.66048 13.1606 7.2454 11.7455 7.2454 9.99986C7.2454 8.25423 8.66052 6.83915 10.4061 6.83915C12.1517 6.83915 13.5668 8.25423 13.5668 9.99986C13.5668 11.7455 12.1517 13.1606 10.4061 13.1606Z" fill="#3166BF"/>
+                <path d="M15.5891 6.10593C16.2736 6.10593 16.8286 5.55099 16.8286 4.86644C16.8286 4.18189 16.2736 3.62695 15.5891 3.62695C14.9045 3.62695 14.3496 4.18189 14.3496 4.86644C14.3496 5.55099 14.9045 6.10593 15.5891 6.10593Z" fill="#3166BF"/>
+              </svg>
+            </a></li>
+            <li><a href="https://www.youtube.com/channel/UCzQECUZYJE7tTvFkLuHC7MQ">
+              <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2525 0.923828H4.55999C2.26594 0.923828 0.40625 2.78352 0.40625 5.07757V10.9226C0.40625 13.2166 2.26594 15.0763 4.55999 15.0763H16.2525C18.5466 15.0763 20.4062 13.2166 20.4062 10.9226V5.07757C20.4062 2.78352 18.5466 0.923828 16.2525 0.923828ZM13.4434 8.28446L7.97439 10.8928C7.82866 10.9623 7.66033 10.8561 7.66033 10.6947V5.31488C7.66033 5.15115 7.83309 5.04503 7.97912 5.11905L13.4481 7.89045C13.6107 7.97284 13.6079 8.20603 13.4434 8.28446Z" fill="#3166BF"/>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main-footer-bottom-line">
+        <p>© 2019. Все права защищены</p>
+        <a href="https://d1.dp.ua/"><img src="img/@2x/d1-footer.png" alt="D1 News">d1.dp.ua</a>
+        <a href="#">Разработано агенством ROVA</a>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="js/scripts.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

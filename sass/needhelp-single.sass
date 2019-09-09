@@ -1,0 +1,381 @@
+@import vars
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core"
+
+.needhelp-single-
+  &section
+    overflow: hidden
+    .section-crumbs
+      margin-bottom: 28px
+    h1
+      text-align: left
+      font-size: 40px
+      line-height: 1.2
+      margin-bottom: 16px
+  &date
+    border-radius: 28px
+    border: solid 1px #e8edf3
+    background-color: $white
+    padding: 14px 24px
+    box-sizing: border-box
+    font-family: Roboto
+    font-weight: bold
+    font-size: 14px
+    display: inline-block
+    line-height: 0.86
+    color: $medium-blue
+  &top-item
+    position: relative
+    display: flex
+    flex-direction: column
+    margin-bottom: 40px
+    margin-top: 24px
+    img
+      width: 100%
+      border-radius: 4px
+    &-
+      &body
+        display: flex
+        flex: 1
+        border-radius: 4px
+        background-color: #f7f7f7
+        padding-top: 16px
+        margin-top: 24px
+        h3
+          flex-grow: 1
+        .button-main
+          margin-left: 24px
+          height: auto
+          align-self: center
+          margin-right: 24px
+      &money
+        display: flex
+        flex-wrap: wrap
+        flex: 1
+        justify-content: space-between
+        &-inner
+          width: 50%
+          text-align: center
+          max-width: 176px
+          &-top
+            line-height: 0.86
+            letter-spacing: normal
+            color: $blue-grey
+          &-bottom
+            font-size: 24px
+            font-weight: bold
+            line-height: 1.33
+            color: $dark-indigo
+            margin-bottom: 18px
+            margin-top: 18px
+            span
+              font-size: 14px
+              margin-left: 5px
+              text-transform: uppercase
+          &:first-child
+            .needhelp-single-top-item-money-inner-bottom
+              color: $squash
+        &-progress
+          width: 100%
+          height: 8px
+          border-radius: 16px
+          background-color: #e8edf3
+          span
+            display: block
+            height: 8px
+            border-radius: 20px
+            box-shadow: 0 4px 16px 0 rgba(135, 88, 20, 0.2)
+            background-color: $squash
+  &image
+    width: 100%
+    margin-top: 25px
+    margin-bottom: 40px
+  &content
+    font-size: 16px
+    line-height: 1.75
+    color: $dark-indigo
+    a
+      font-weight: 600
+      color: $medium-blue
+      text-decoration: underline
+    p
+      margin-bottom: 40px
+    img
+      margin-top: 0
+      margin-bottom: 40px
+      width: 100%
+
+  &controls
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    display: flex
+    div
+      border-radius: 20px
+      box-shadow: 0 8px 24px 0 rgba(55, 115, 187, 0.1)
+      padding: 12px 28px
+      box-sizing: border-box
+      position: relative
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+      border: solid 1px #e8edf3
+      box-sizing: border-box
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 32px
+        box-shadow: 0 8px 24px 0 rgba(55, 115, 187, 0.2)
+        background-image: linear-gradient(-45deg,#3267c0,#1950a7)
+        opacity: 0
+        transition: opacity .4s, box-shadow .4s
+      &:first-child
+        margin-right: 16px
+      svg
+        width: 16px
+        z-index: 2
+        position: relative
+        path
+          fill: $blue-grey
+          transition: fill .3s
+      &:hover
+        svg
+          path
+            fill: $white
+        &::before
+          box-shadow: 0 8px 24px 0 rgba(55, 115, 187, 0.5)
+          opacity: 1
+      &:active
+        &::before
+          opacity: 1
+          box-shadow: 0 8px 24px 0 rgba(55, 115, 187, 0.2)
+          background: $medium-blue
+      &.active
+        &::before
+          opacity: 1
+        svg
+          path
+            fill: $white
+  &more
+    margin-bottom: -32px
+    margin-top: 100px
+    .h2-wrapper
+      margin-bottom: 50px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        top: calc(100% + 16px)
+        left: 0
+        width: 100%
+        height: 1px
+        background-color: rgba(0, 0, 0, 0.15)
+    h2
+      +Header4
+      display: block
+  &glide
+    margin-bottom: -20px
+    .glide__track
+      overflow: unset
+      margin-top: -24px
+  &item
+    overflow: hidden
+    height: calc(100% - 32px)
+    position: relative
+    border-radius: 4px
+    background-color: $white
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05)
+    margin-bottom: 52px
+    margin-top: 24px
+    display: flex
+    flex-direction: column
+    transition: box-shadow .3s, transform .3s
+    &:hover
+      transform: scale(1.03)
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.25)
+    img
+      width: 100%
+    &-
+      &body
+        padding: 24px
+        display: flex
+        flex: 1
+        flex-direction: column
+        justify-content: flex-end
+        h3
+          flex-grow: 1
+      &money
+        border-radius: 4px
+        background-color: #f7f7f7
+        display: flex
+        flex-wrap: wrap
+        margin-top: 16px
+        margin-bottom: 24px
+        padding-top: 19px
+        &-inner
+          width: 50%
+          text-align: center
+          &-top
+            line-height: 0.86
+            letter-spacing: normal
+            color: $blue-grey
+          &-bottom
+            font-size: 24px
+            font-weight: bold
+            line-height: 1.33
+            color: $dark-indigo
+            margin-bottom: 18px
+            margin-top: 18px
+            span
+              font-size: 14px
+              margin-left: 5px
+              text-transform: uppercase
+          &:first-child
+            .needhelp-single-item-money-inner-bottom
+              color: $squash
+        &-progress
+          width: 100%
+          height: 8px
+          border-radius: 16px
+          background-color: #e8edf3
+          span
+            display: block
+            height: 8px
+            border-radius: 20px
+            box-shadow: 0 4px 16px 0 rgba(135, 88, 20, 0.2)
+            background-color: $squash
+
+
+@media (max-width: $md)
+  .needhelp-single-
+    &section
+      h1
+        font-size: 32px
+    &content
+      p
+        margin-bottom: 30px
+    &more
+      h2
+        font-size: 28px
+    &top-item
+      margin-bottom: 20px
+      &-
+        &body
+          padding: 24px
+          flex-direction: column
+          background-color: transparent
+          margin-top: 0
+          .button-main
+            width: 100%
+        &money
+          border-radius: 4px
+          background-color: #f7f7f7
+          margin-bottom: 24px
+          padding-top: 19px
+          &-progress
+            width: 100%
+            height: 8px
+            border-radius: 16px
+            background-color: #e8edf3
+            span
+              display: block
+              height: 8px
+              border-radius: 20px
+              box-shadow: 0 4px 16px 0 rgba(135, 88, 20, 0.2)
+              background-color: $squash
+    &item
+      &-
+        &money
+          &-inner
+            &-top
+              font-size: 12px
+            &-bottom
+              font-size: 20px
+
+@media (max-width: $sm)
+  .needhelp-single-
+    &section
+      h1
+        font-size: 24px
+        line-height: 1.33
+    &date
+      padding: 10px 24px
+      font-size: 12px
+      line-height: 1
+    &content
+      p
+        margin-bottom: 20px
+    &more
+      margin-top: 48px
+      .h2-wrapper
+        margin-bottom: 41px
+        &::after
+          top: calc(100% + 8px)
+      h2
+        font-size: 24px
+        line-height: 1.33
+    &controls
+      top: calc(100% + 41px)
+      transform: none
+      z-index: 1
+      width: 100%
+      justify-content: space-between
+      padding: 16px 16px 0
+      div, div.active
+        background: rgba(0, 0, 0, 0.2)
+        padding: 8px
+        width: 40px
+        height: 40px
+        border: none
+        &::before
+          opacity: 0
+        &:hover
+          &::before
+            opacity: 1
+        svg
+          path
+            fill: $white
+    &top-item
+      margin-bottom: 0
+      &-
+        &body
+          padding: 24px 16px
+        &money
+          &-inner
+            &-top
+              font-size: 12px
+            &-bottom
+              font-size: 20px
+    &item
+      height: auto
+      &-
+        &body
+          padding: 16px 16px 24px
+          h3
+            flex-grow: 0
+        &money
+          margin-bottom: 16px
+          padding-top: 16px
+          &-inner
+            &-top
+              font-size: 12px
+            &-bottom
+              font-size: 20px
+              margin-bottom: 12px
+              margin-top: 12px
+          &-progress
+            width: 100%
+            height: 8px
+            border-radius: 16px
+            background-color: #e8edf3
+            span
+              display: block
+              height: 8px
+              border-radius: 20px
+              box-shadow: 0 4px 16px 0 rgba(135, 88, 20, 0.2)
+              background-color: $squash

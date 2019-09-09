@@ -1,0 +1,170 @@
+@import vars
+
+.needhelp-
+  &section
+    h1
+      margin-bottom: 32px
+  &filters
+    display: flex
+    justify-content: center
+    margin-bottom: 64px
+    flex-wrap: wrap
+    &-item
+      font-family: Roboto
+      font-size: 14px
+      font-weight: bold
+      line-height: 0.86
+      color: $blue-grey
+      padding: 14px 24px
+      margin-left: 8px
+      margin-right: 8px
+      cursor: pointer
+      transition: color .3s
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 32px
+        box-shadow: 0 8px 24px 0 rgba(55, 115, 187, 0.2)
+        background: linear-gradient(-45deg,#3267c0,#1950a7)
+        opacity: 0
+        transition: opacity .4s
+      &:first-child
+        margin-left: 0
+      &:hover
+        color: $dark-indigo
+      &:active, &.active
+        color: $white
+        &::before
+          opacity: 1
+  &item
+    overflow: hidden
+    height: calc(100% - 32px)
+    position: relative
+    border-radius: 4px
+    background-color: $white
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05)
+    margin-bottom: 32px
+    display: flex
+    flex-direction: column
+    transition: box-shadow .3s, transform .3s
+    &:hover
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.25)
+      transform: scale(1.03)
+    img
+      width: 100%
+    &-
+      &body
+        padding: 24px
+        display: flex
+        flex: 1
+        flex-direction: column
+        justify-content: flex-end
+        h3
+          flex-grow: 1
+      &money
+        border-radius: 4px
+        background-color: #f7f7f7
+        display: flex
+        flex-wrap: wrap
+        margin-top: 16px
+        margin-bottom: 24px
+        padding-top: 19px
+        &-inner
+          width: 50%
+          text-align: center
+          &-top
+            line-height: 0.86
+            letter-spacing: normal
+            color: $blue-grey
+          &-bottom
+            font-size: 24px
+            font-weight: bold
+            line-height: 1.33
+            color: $dark-indigo
+            margin-bottom: 18px
+            margin-top: 18px
+            span
+              font-size: 14px
+              margin-left: 5px
+              text-transform: uppercase
+          &:first-child
+            .needhelp-item-money-inner-bottom
+              color: $squash
+        &-progress
+          width: 100%
+          height: 8px
+          border-radius: 16px
+          background-color: #e8edf3
+          span
+            display: block
+            height: 8px
+            border-radius: 20px
+            box-shadow: 0 4px 16px 0 rgba(135, 88, 20, 0.2)
+            background-color: $squash
+
+
+
+
+
+
+
+
+@media (max-width: $md)
+  .needhelp-
+    &item
+      &-
+        &money
+          &-inner
+            &-top
+              font-size: 12px
+            &-bottom
+              font-size: 20px
+
+@media (max-width: $sm)
+  .needhelp-
+    &section
+      h1
+        margin-bottom: 24px
+    &filters
+      margin-bottom: 32px
+      &-item
+        padding: 10px 14px
+        margin-left: 4px
+        margin-right: 4px
+        font-size: 12px
+        line-height: 1
+        margin-bottom: 4px
+    &item
+      height: auto
+      &-
+        &body
+          padding: 16px 16px 24px
+          h3
+            flex-grow: 0
+        &money
+          margin-bottom: 16px
+          padding-top: 16px
+          &-inner
+            &-top
+              font-size: 12px
+            &-bottom
+              font-size: 20px
+              margin-bottom: 12px
+              margin-top: 12px
+          &-progress
+            width: 100%
+            height: 8px
+            border-radius: 16px
+            background-color: #e8edf3
+            span
+              display: block
+              height: 8px
+              border-radius: 20px
+              box-shadow: 0 4px 16px 0 rgba(135, 88, 20, 0.2)
+              background-color: $squash

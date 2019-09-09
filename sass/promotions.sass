@@ -1,0 +1,88 @@
+@import vars
+
+.promotions-
+  &section
+    .button-main
+      display: flex
+      justify-content: center
+      align-items: center
+      svg
+        height: 7px
+        width: auto
+        margin-left: 10px
+        transition: transform .3s
+      &.active
+        svg
+          transform: rotate(180deg)
+  &outer
+    width: 100%
+    h2
+      width: 100%
+      padding-bottom: 16px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+      margin-bottom: 48px
+      margin-top: 64px
+  &item
+    overflow: hidden
+    position: relative
+    display: block
+    color: $white
+    border-radius: 4px
+    margin-bottom: 32px
+    transition: box-shadow .3s, transform .3s
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05)
+    &:hover
+      transform: scale(1.03)
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.25)
+      color: $white
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      bottom: 0
+      left: 0
+      height: 250px
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))
+    img
+      width: 100%
+    &-
+      &body
+        padding: 0 24px 24px
+        display: block
+        z-index: 1
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        h3
+          color: $white
+      &date
+        border-radius: 20px
+        background-color: rgba($white, 0.25)
+        padding: 10px 24px
+        box-sizing: border-box
+        font-family: Roboto
+        font-weight: bold
+        font-size: 14px
+        margin-bottom: 8px
+        display: inline-block
+
+
+@media (max-width: $sm)
+  .promotions-
+    &outer
+      h2
+        padding-bottom: 8px
+        margin-bottom: 32px
+        margin-top: 48px
+
+@media (max-width: $sm)
+  .promotions-
+    &outer
+      h2
+        padding-bottom: 8px
+        margin-bottom: 32px
+        margin-top: 48px
+    &item
+      &-body
+        padding: 0 16px 16px

@@ -1,0 +1,302 @@
+@import vars
+
+.about-section, .leadership-section
+  h2
+    text-align: center
+    margin-bottom: 64px
+    text-transform: none
+
+.about-
+  &wrapper
+    display: flex
+    align-items: center
+    >div
+      width: 50%
+  &image
+    img
+      width: 100%
+      border-radius: 4px
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05)
+  &body
+    padding-left: 64px
+    font-size: 16px
+    line-height: 1.75
+    color: $dark-indigo
+    p:not(:last-of-type)
+      margin-bottom: 40px
+
+.leadership-
+  &section
+    padding-top: 64px
+    padding-bottom: 200px
+    position: relative
+    &::before, &::after
+      content: ''
+      position: absolute
+      left: 0
+      width: 100%
+      z-index: -1
+    &::before
+      top: -64px
+      height: 984px
+      background: linear-gradient(0deg, #E7EFFE 0%, rgba(255, 255, 255, 0) 100%)
+    &::after
+      top: 920px
+      height: 559px
+      background: linear-gradient(180deg, #E7EFFE 0%, rgba(255, 255, 255, 0) 100%)
+  &wrapper
+    position: relative
+    display: flex
+    flex-wrap: wrap
+  &main-item
+    display: flex
+    margin-left: 112px
+    margin-right: 112px
+    align-items: center
+    width: 100%
+    img
+      width: auto
+      height: 400px
+      border-radius: 50%
+      margin-right: 48px
+    &-body
+      color: $grey-blue
+      font-size: 14px
+      p
+        margin-top: 16px
+        margin-bottom: 32px
+    &-quote
+      padding-left: 64px
+      font-size: 20px
+      font-style: italic
+      line-height: 1.6
+      color: $dark-indigo
+      position: relative
+      svg
+        position: absolute
+        width: 48px
+        height: auto
+        left: 0
+        top: 0
+  &item
+    display: flex
+    align-items: center
+    &-2
+      position: absolute
+      left: 560px
+      top: 423px
+    &-3
+      margin-top: 64px
+      max-width: 528px
+    &-4
+      margin-top: 59px
+      margin-left: 336px
+    img
+      height: 192px
+      width: auto
+      margin-right: 32px
+      border-radius: 50%
+    h5
+      margin-bottom: 8px
+
+.contacts-
+  &section
+    display: flex
+    align-items: center
+    > div
+      width: 50%
+    h2
+      margin-bottom: 56px
+  &map
+    height: 620px
+    background-color: $blue-grey
+  &info
+    padding-left: 128px
+  &body
+    padding-bottom: 36px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+    max-width: 315px
+  &item
+    padding-left: 36px
+    box-sizing: border-box
+    position: relative
+    margin-left: -4px
+    svg
+      position: absolute
+      top: 0
+      left: 0
+      width: 20px
+      height: auto
+      margin-top: 6px
+    &:not(:last-child)
+      margin-bottom: 16px
+    a
+      display: block
+      font-size: 16px
+      line-height: 1.5
+      color: $dark-indigo
+      &[href^="mailto:"]
+        color: $medium-blue
+        font-weight: 600
+  &more
+    padding-top: 32px
+    p
+      font-size: 16px
+      line-height: 1.5
+      color: $dark-indigo
+      &:first-child
+        color: #505565
+        margin-bottom: 10px
+
+
+
+
+
+
+
+@media (max-width: $lx)
+  .leadership-
+    &main-item
+      margin-left: 50px
+      margin-right: 50px
+      img
+        height: 300px
+    &item
+      &-2
+        left: 480px
+        top: 450px
+      &-3
+        margin-top: 64px
+      &-4
+        margin-top: 59px
+        margin-left: 150px
+
+@media (max-width: $lg)
+  .leadership-
+    &main-item
+      margin-left: auto
+      margin-right: auto
+      width: 80%
+      flex-direction: column
+      img
+        width: 70%
+        height: auto
+        margin-right: 0
+        margin-bottom: 16px
+      &-body
+        text-align: center
+        p
+          margin-top: 8px
+          margin-bottom: 24px
+      &-quote
+        padding-left: 37px
+        font-size: 16px
+        line-height: 1.75
+        text-align: left
+        svg
+          width: 24px
+    &item
+      &-2
+        position: relative
+        left: auto
+        top: auto
+        margin-left: 100px
+        margin-top: 48px
+      &-3
+        margin-right: 0
+        margin-top: 48px
+      &-4
+        margin-left: 100px
+        margin-top: 48px
+  .contacts-
+    &section
+      h2
+        margin-bottom: 38px
+    &map
+      height: 420px
+    &info
+      padding-left: 48px
+
+@media (max-width: $md)
+  .about-
+    &section
+      h2
+        margin-bottom: 48px
+    &wrapper
+      flex-direction: column
+      >div
+        width: 100%
+    &image
+      margin-bottom: 24px
+    &body
+      padding-left: 0
+      p:not(:last-of-type)
+        margin-bottom: 40px
+  .leadership-
+    &section
+      h2
+        margin-bottom: 48px
+
+
+
+@media (max-width: $sm)
+  .leadership-
+    &section
+      margin-top: 0
+      padding-top: 41px
+      padding-bottom: 96px
+      h2
+        margin-bottom: 32px
+    &wrapper
+      flex-direction: column
+      align-items: center
+    &main-item
+      margin-left: 0
+      margin-right: 0
+      img
+        width: 100%
+    &item
+      flex-direction: column
+      text-align: center
+      width: 70%
+      margin-top: 40px
+      &-2
+        margin-left: 0
+      &-3
+        max-width: 100%
+        margin-right: 0
+      &-4
+        margin-left: 0
+      img
+        width: 100%
+        height: auto
+        margin-right: 0
+        margin-bottom: 16px
+      h5
+        margin-bottom: 8px
+      p
+        font-size: 14px
+        line-height: .88
+  .contacts-
+    &section
+      flex-wrap: wrap
+      > div
+        width: 100%
+      h2
+        margin-bottom: 32px
+    &map
+      height: 320px
+      order: 2
+    &info
+      padding-left: 0
+    &item
+      a
+        font-size: 14px
+        line-height: 1.43
+    &more
+      margin-bottom: 32px
+      p
+        font-size: 14px
+        line-height: 1.43
+        &:first-child
+          margin-bottom: 8px

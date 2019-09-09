@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+
+<div class="popup">
+  <div class="popup-overlay"></div>
+  <form action="" class="popup-form popup-make-payment">
+    <div class="popup-form-close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.3327 2.54663L17.4527 0.666626L9.99935 8.11996L2.54602 0.666626L0.666016 2.54663L8.11935 9.99996L0.666016 17.4533L2.54602 19.3333L9.99935 11.88L17.4527 19.3333L19.3327 17.4533L11.8793 9.99996L19.3327 2.54663Z" fill="#919FAE"/>
+      </svg>
+    </div>
+    <h2>Сделать пожертвование</h2>
+    <div class="popup-make-payment-tab">
+      <div class="popup-make-payment-tab-item active"><span>Публично</span></div>
+      <div class="popup-make-payment-tab-item popup-make-payment-tab-item-anonymous"><span>Анонимно</span></div>
+    </div>
+    <label for="name">
+      <p>Имя</p>
+      <input type="text" id="name" placeholder="Введите ваше имя" required>
+    </label>
+    <label for="email">
+      <p>E-mail</p>
+      <input type="email" id="email" placeholder="Введите ваш e-mail" required>
+    </label>
+    <label for="email">
+      <p>E-mail</p>
+      <input type="email" id="email" placeholder="Введите ваш e-mail" required>
+    </label>
+    <input class="input-price">
+    <div id="popup-make-payment-range-price"></div>
+    <div class="popup-make-payment-price">
+      <div class="popup-make-payment-price-min">От 10 грн</div>
+      <div class="popup-make-payment-price-max">До 1 000 000 грн</div>
+    </div>
+    <div class="button-main-wrap">
+      <button class="button-main">Перейти к оплате</button>
+    </div>
+  </form>
+  <form action="" class="popup-form popup-ask-for-help">
+    <div class="popup-form-close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.3327 2.54663L17.4527 0.666626L9.99935 8.11996L2.54602 0.666626L0.666016 2.54663L8.11935 9.99996L0.666016 17.4533L2.54602 19.3333L9.99935 11.88L17.4527 19.3333L19.3327 17.4533L11.8793 9.99996L19.3327 2.54663Z" fill="#919FAE"/>
+      </svg>
+    </div>
+    <h2>Запрос помощи</h2>
+    <p class="h2-bottom">Шаг 1</p>
+    <label for="name">
+      <p>Имя</p>
+      <input type="text" id="name" placeholder="Введите ваше имя" required>
+    </label>
+    <label for="surname">
+      <p>Фамилия</p>
+      <input type="text" id="surname" placeholder="Введите вашу фамилию" required>
+    </label>
+    <label for="email">
+      <p>E-mail</p>
+      <input type="email" id="email" placeholder="Введите ваш e-mail" required>
+    </label>
+    <label for="phone">
+      <p>Телефон</p>
+      <input type="text" id="phone" placeholder="Введите ваш телефон" required>
+    </label>
+    <label for="passport" class='passport'>
+      <p>Паспорт</p>
+      <div>
+        <div>
+          <input type="radio" id="passport-book" name="passport" value="passport-book" class="checkbox" 
+             checked>
+             <span class="checkmark"></span>
+          <label for="passport-book">В виде книжки</label>
+        </div>
+        <div>
+          <input type="radio" id="passport-id" name="passport" value="passport-id" class="checkbox" >
+          <span class="checkmark"></span>
+          <label for="passport-id">В виде карточки ID</label>
+        </div>
+      </div>  
+      <div>
+        <input type="text" id="passport" placeholder="Номер паспорта" required>
+      </div>  
+    </label>
+    <div class="button-main-wrap">
+      <button class="button-main">Далее</button>
+    </div>
+  </form>
+</div>
+
+	<section class="first-screen">
+		<div class="container">
+			<header class="main-header">
+				<a href="index.html" class="main-header-logo">
+					<img src="img/@2x/logo-header.png" alt="Solidarnost">
+				</a>
+                <div class="main-header-menu-mobile-open">
+                    <span></span>
+                </div>
+				<div class="main-header-menu">
+					<nav class="main-header-nav">
+						<ul>
+							<li><a href="needhelp.html">Нужна помощь</a></li>
+							<li><a href="promotions.html">Акции фонда</a></li>
+							<li><a href="news.html">Новости</a></li>
+							<li><a class="active" href="about.html">О нас</a></li>
+							<li><a href="gallery.html">Галерея</a></li>
+						</ul>
+					</nav>
+                	<label  class="search-line" for="site-search">
+                		<span class="svg-button">
+                			<svg class="svg-search" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#0C1132"/>
+							</svg>
+						</span>
+						<span class="svg-button">
+							<svg class="svg-close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.3327 2.54663L17.4527 0.666626L9.99935 8.11996L2.54602 0.666626L0.666016 2.54663L8.11935 9.99996L0.666016 17.4533L2.54602 19.3333L9.99935 11.88L17.4527 19.3333L19.3327 17.4533L11.8793 9.99996L19.3327 2.54663Z" fill="#919FAE"/>
+							</svg>
+						</span>
+
+                        <input type="search" id="site-search" name="q" placeholder="Поиск...">
+                    </label>
+					<div class="select-lang">
+						<div class="select-lang-item"><img src="img/@2x/rus.png" alt="rus"><span>Рус</span><svg class="select-lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 1.88125L6.00008 7.58836L11.7072 1.88125L10.1191 0.293213L6.28806 4.11744L6.00008 4.35651L5.71209 4.11744L1.88101 0.293213L0.292969 1.88125Z" fill="#0C1132"/></svg></div>
+						<div class="select-lang-hidden">
+							<a href="#" class="select-lang-item"><img src="img/@2x/ukr.png" alt="ukr"><span>Укр</span></a>
+							<a href="#" class="select-lang-item"><img src="img/@2x/eng.png" alt="eng"><span>Eng</span></a>
+						</div>
+					</div>
+					<a href="#" class="button-main open-popup-needhelp">Запрос помощи</a>
+				</div>
+			</header>
+			<div class="main-header-menu-mobile">
+                <div class="container">
+                    <div class="main-header-menu-mobile-wrapper">
+                        <label for="site-search">
+                        <input type="search" id="site-search" name="q" placeholder="Поиск...">
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#0C1132"/>
+                            </svg>
+                        </button>
+                        </label>
+                        <nav class="main-header-nav">
+                            <ul>
+                                <li><a href="needhelp.html">Нужна помощь</a></li>
+                                <li><a href="promotions.html">Акции фонда</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a class="active" href="about.html">О нас</a></li>
+                                <li><a href="gallery.html">Галерея</a></li>
+                            </ul>
+                        </nav>
+                        <div class="select-lang">
+                            <div class="select-lang-item"><img src="img/@2x/rus.png" alt="rus"><span>Рус</span><svg class="select-lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 1.88125L6.00008 7.58836L11.7072 1.88125L10.1191 0.293213L6.28806 4.11744L6.00008 4.35651L5.71209 4.11744L1.88101 0.293213L0.292969 1.88125Z" fill="#0C1132"/></svg></div>
+                            <div class="select-lang-hidden">
+                                <a href="#" class="select-lang-item"><img src="img/@2x/ukr.png" alt="ukr"><span>Укр</span></a>
+                                <a href="#" class="select-lang-item"><img src="img/@2x/eng.png" alt="eng"><span>Eng</span></a>
+                            </div>
+                        </div>
+                        <a href="#" class="button-main open-popup-needhelp">Запрос помощи</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-all about-section">
+		<div class="container">
+			<div class="section-crumbs">
+				<a href="index.html">Главная</a> / <span>О нас</span>
+			</div>
+			<h2>О нас</h2>
+			<div class="about-wrapper">
+				<div class="about-image">
+					<img src="img/@2x/promotions/image.jpg" alt="">
+				</div>
+				<div class="about-body">
+					<p>Международный благотворительный фонд Александра Петровского «Солидарность» выступил координатором совместного проекта, который состоялся в социальном центре «Хорошо дома».</p>
+					<p>Все это было сделано для детей, временно проживающих в Центре и в отношении которых ведется работа по возвращению в их биологические семьи, устройства в семейные формы воспитания, для детей из семей льготных категорий, а также для детей с инвалидностью и детей с особыми потребностями.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-all leadership-section">
+		<div class="container">
+			<h2>Руководство</h2>
+			<div class="leadership-wrapper">
+				<div class="leadership-main-item">
+					<img src="img/@2x/about/image.jpg" alt="">
+					<div class="leadership-main-item-body">
+						<h4>Александр Владимирович Петровский</h4>
+						<p>Президент международного благотворительного фонда</p>
+						<div class="leadership-main-item-quote">
+<!--							Заменить иконку нормальной, обрезаной -->
+							<svg width="80" height="64" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_d)">
+									<path d="M33.0398 12C34.8263 12 36.0007 13.5955 35.9087 15.3797L35.8835 15.8688C35.7733 18.0045 34.0057 19.5869 32.2878 20.8605C31.3443 21.5601 30.6074 22.5208 30.077 23.7428C29.3628 25.3884 30.8146 27.0089 32.6086 27.0089C34.2929 27.0089 35.6398 28.4085 35.5752 30.0915L35.3551 35.8301C35.1801 40.392 31.431 44 26.8658 44H25.7605C20.3889 44 16.0526 39.6114 16.117 34.2402L16.1862 28.472C16.2793 22.0846 19.0262 17.3805 24.4268 14.3599C27.2512 12.7866 30.1222 12 33.0398 12ZM60.9738 12C62.7604 12 63.9347 13.5955 63.8427 15.3797L63.8175 15.8688C63.7073 18.0045 61.9397 19.5869 60.2219 20.8605C59.2784 21.5601 58.5415 22.5208 58.0111 23.7428C57.2968 25.3884 58.7487 27.0089 60.5426 27.0089C62.2269 27.0089 63.5739 28.4085 63.5093 30.0915L63.2892 35.8301C63.1142 40.392 59.3651 44 54.7998 44H53.6945C48.323 44 43.9867 39.6114 44.0511 34.2402L44.1203 28.472C44.2134 22.0846 46.9602 17.3805 52.3608 14.3599C55.1853 12.7866 58.0563 12 60.9738 12Z" fill="url(#paint0_linear)"/>
+								</g>
+								<defs>
+									<filter id="filter0_d" x="0.116211" y="0" width="79.7314" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="4"/>
+										<feGaussianBlur stdDeviation="8"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.346086 0 0 0 0 0.079375 0 0 0 0.2 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="-66.7164" y1="28.9005" x2="-27.935" y2="157.946" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#EB9A24"/>
+										<stop offset="1" stop-color="#FFC700"/>
+									</linearGradient>
+								</defs>
+							</svg>
+							Три вещи никогда не возвращаются обратно — время, слово, возможность. Поэтому: не теряй времени, выбирай слова, не упускай возможность.
+						</div>
+					</div>
+				</div>
+				<div class="leadership-item leadership-item-2">
+					<img src="img/@2x/about/image2.jpg" alt="">
+					<div class="leadership-item-body">
+						<h5>Иванилова Яна Юрьевна</h5>
+						<p>Вице - президент</p>
+					</div>
+				</div>
+				<div class="leadership-item leadership-item-3">
+					<img src="img/@2x/about/image3.jpg" alt="">
+					<div class="leadership-item-body">
+						<h5>Гулямов Богдан Святославович</h5>
+						<p>Председатель правления</p>
+					</div>
+				</div>
+				<div class="leadership-item leadership-item-4">
+					<img src="img/@2x/about/image4.jpg" alt="">
+					<div class="leadership-item-body">
+						<h5>Давитян Вемир Суренович</h5>
+						<p>Вице - президент</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts-section">
+		<div class="contacts-map">
+
+		</div>
+		<div class="contacts-info">
+			<div class="container">
+				<h2>Контакты</h2>
+				<div class="contacts-body">
+					<div class="contacts-item">
+						<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9.99992 3.25488L2.86701 9.13521C2.86701 9.14351 2.86492 9.15572 2.86075 9.17237C2.85666 9.18888 2.85449 9.20087 2.85449 9.20938V15.1638C2.85449 15.3788 2.93309 15.5651 3.09025 15.722C3.24737 15.879 3.43342 15.958 3.64846 15.958H8.4119V11.1943H11.588V15.9582H16.3514C16.5664 15.9582 16.7527 15.8794 16.9096 15.722C17.0668 15.5653 17.1456 15.3789 17.1456 15.1638V9.20938C17.1456 9.17636 17.1411 9.15142 17.1331 9.13521L9.99992 3.25488Z" fill="#3166BF"/>
+							<path d="M19.8621 7.79541L17.1455 5.53765V0.476276C17.1455 0.360569 17.1083 0.265413 17.0336 0.190939C16.9596 0.116553 16.8644 0.0793593 16.7485 0.0793593H14.3667C14.2509 0.0793593 14.1558 0.116553 14.0812 0.190939C14.0069 0.265413 13.9697 0.360612 13.9697 0.476276V2.89528L10.9429 0.364523C10.6786 0.149488 10.3642 0.0419922 10.0003 0.0419922C9.63641 0.0419922 9.32214 0.149488 9.05752 0.364523L0.137848 7.79541C0.0551625 7.86145 0.00984397 7.95035 0.00141463 8.06202C-0.00697126 8.1736 0.0219231 8.27106 0.0881847 8.3537L0.857297 9.27172C0.923558 9.3461 1.01028 9.39159 1.11782 9.40824C1.21711 9.41658 1.31639 9.38755 1.41568 9.32142L10 2.16336L18.5845 9.32138C18.6508 9.37908 18.7375 9.40789 18.845 9.40789H18.8823C18.9897 9.39155 19.0762 9.34576 19.1428 9.27154L19.912 8.35366C19.9782 8.27084 20.0071 8.17356 19.9985 8.06185C19.9901 7.95048 19.9446 7.86158 19.8621 7.79541Z" fill="#3166BF"/>
+						</svg>
+						<a href="#">г. Днепр, ул. Михаила Грушевского,
+						дом № 55а</a>
+					</div>
+					<div class="contacts-item">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.9914 14.1962C18.0296 14.4884 17.9405 14.7425 17.7246 14.9584L15.1903 17.4737C15.076 17.6007 14.9267 17.7088 14.7425 17.7976C14.5583 17.8866 14.3773 17.9437 14.1995 17.9691C14.1868 17.9691 14.1486 17.9724 14.0851 17.9787C14.0216 17.985 13.9391 17.9883 13.8374 17.9883C13.596 17.9883 13.2054 17.947 12.6655 17.8644C12.1256 17.7818 11.465 17.5785 10.6838 17.2546C9.9024 16.9307 9.01635 16.4447 8.02551 15.7969C7.03466 15.1491 5.98023 14.2598 4.86232 13.1291C3.97307 12.2526 3.23626 11.4142 2.6519 10.6139C2.06754 9.8135 1.5975 9.07352 1.2418 8.39388C0.886073 7.71424 0.619299 7.09812 0.441449 6.54551C0.263599 5.99291 0.142915 5.51652 0.0793973 5.11636C0.0158795 4.7162 -0.00952767 4.40178 0.00317589 4.17312C0.0158795 3.94446 0.0222312 3.81742 0.0222312 3.79201C0.0476384 3.61416 0.104804 3.43314 0.193729 3.24894C0.282654 3.06473 0.390635 2.91547 0.51767 2.80114L3.05203 0.266775C3.22988 0.0889249 3.43314 0 3.6618 0C3.82695 0 3.97304 0.0476384 4.10007 0.142915C4.22711 0.238192 4.33509 0.3557 4.42402 0.495439L6.46294 4.36367C6.57727 4.56693 6.60903 4.78924 6.55821 5.03061C6.5074 5.27198 6.39942 5.47524 6.23427 5.64038L5.30056 6.57409C5.27515 6.5995 5.25292 6.64079 5.23387 6.69795C5.21481 6.75512 5.20528 6.80276 5.20528 6.84087C5.2561 7.10764 5.37043 7.41253 5.54828 7.75553C5.70072 8.06041 5.93574 8.43199 6.25333 8.87026C6.57092 9.30854 7.02189 9.81347 7.60626 10.3851C8.17792 10.9696 8.68606 11.4236 9.13068 11.7477C9.57522 12.0715 9.94692 12.3098 10.2455 12.4622C10.544 12.6146 10.7727 12.7067 10.9314 12.7384L11.1695 12.7861C11.195 12.7861 11.2363 12.7765 11.2934 12.7575C11.3506 12.7384 11.3919 12.7162 11.4173 12.6908L12.5034 11.5856C12.7322 11.3823 12.9989 11.2807 13.3038 11.2807C13.5198 11.2807 13.6912 11.3188 13.8183 11.395H13.8373L17.5149 13.5673C17.7818 13.7326 17.9406 13.9422 17.9914 14.1962Z" fill="#3166BF"/>
+						</svg>
+						<a href="#">+38(056) 768-00-01</a>
+						<a href="#">+38(056) 768-00-01</a>
+					</div>
+					<div class="contacts-item">
+						<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.91961 4.9868C2.1726 5.16533 2.93523 5.69556 4.20753 6.57722C5.47986 7.45888 6.45456 8.13773 7.13165 8.61382C7.20604 8.66601 7.36409 8.77945 7.60587 8.95431C7.84769 9.12928 8.04861 9.27067 8.2085 9.37852C8.36849 9.48634 8.56192 9.60728 8.78896 9.74117C9.01592 9.87494 9.22987 9.97556 9.43076 10.0422C9.63168 10.1093 9.81768 10.1426 9.98878 10.1426H10H10.0113C10.1824 10.1426 10.3684 10.1093 10.5694 10.0422C10.7702 9.97556 10.9843 9.87482 11.2111 9.74117C11.438 9.60713 11.6314 9.4863 11.7914 9.37852C11.9514 9.27067 12.1522 9.12928 12.3941 8.95431C12.6358 8.7793 12.794 8.66601 12.8684 8.61382C13.5528 8.13773 15.2941 6.92861 18.0916 4.98657C18.6347 4.60726 19.0885 4.14959 19.453 3.61384C19.8178 3.07834 20 2.51656 20 1.92882C20 1.43768 19.8232 1.01726 19.4697 0.66759C19.1163 0.317842 18.6977 0.143066 18.2142 0.143066H1.78564C1.21276 0.143066 0.771892 0.336489 0.463112 0.723334C0.154371 1.11026 0 1.59389 0 2.1742C0 2.64294 0.204681 3.15089 0.613847 3.69773C1.02297 4.24462 1.45837 4.67435 1.91961 4.9868Z" fill="#3166BF"/>
+							<path d="M18.8838 6.1809C16.4435 7.83254 14.5906 9.11614 13.3259 10.0314C12.9018 10.3438 12.5578 10.5876 12.2936 10.7624C12.0294 10.9372 11.678 11.1158 11.2389 11.298C10.8 11.4805 10.3909 11.5714 10.0114 11.5714H10H9.9888C9.60935 11.5714 9.20007 11.4805 8.76115 11.298C8.32224 11.1158 7.97061 10.9372 7.70648 10.7624C7.44242 10.5876 7.09826 10.3438 6.6742 10.0314C5.66968 9.29486 3.82075 8.01119 1.12735 6.1809C0.70313 5.89835 0.327387 5.57449 0 5.20996V14.0713C0 14.5627 0.174776 14.9829 0.524523 15.3326C0.874192 15.6824 1.29465 15.8573 1.78575 15.8573H18.2144C18.7054 15.8573 19.1258 15.6824 19.4755 15.3326C19.8253 14.9828 20 14.5627 20 14.0713V5.20996C19.68 5.56694 19.3081 5.89081 18.8838 6.1809Z" fill="#2D64B9"/>
+						</svg>
+						<a href="mailto:charitymbf@gmail.com">charitymbf@gmail.com</a>
+					</div>
+				</div>
+				<div class="contacts-more">
+					<p>Реквизиты: Р/сч 2600105000064</p>
+					<p>МФО 305299 в КБ Приватбанк</p>
+					<p>ОКПО 26438886</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main-footer">
+		<div class="container">
+			<nav class="main-footer-nav">
+				<a href="#" class="main-footer-logo">
+					<img src="img/@2x/logo-header.png" alt="Solidarnost">
+				</a>
+				<div>
+					<h6>Основное</h6>
+					<ul>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="about.html">Контакты</a></li>
+						<li><a href="ukraine.html">Вся Украина</a></li>
+						<li><a href="gallery.html">Галерея</a></li>
+					</ul>
+				</div>
+				<div>
+					<h6>Нужна помощь</h6>
+					<ul>
+						<li><a href="needhelp.html">Дети</a></li>
+						<li><a href="needhelp.html">АТО</a></li>
+						<li><a href="needhelp.html">Лечение</a></li>
+						<li><a href="needhelp.html">Спорт</a></li>
+						<li><a href="needhelp.html">Образование</a></li>
+						<li><a href="needhelp.html">Культура</a></li>
+						<li><a href="needhelp.html">Медицина</a></li>
+						<li><a href="needhelp.html">Разное</a></li>
+					</ul>
+				</div>
+				<div>
+					<h6>Акции фонда</h6>
+					<ul>
+						<li><a href="promotions.html">2019</a></li>
+						<li><a href="promotions.html">2018</a></li>
+						<li><a href="promotions.html">2017</a></li>
+						<li><a href="promotions.html">2016</a></li>
+						<li><a href="promotions.html">2015</a></li>
+						<li><a href="promotions.html">2014</a></li>
+						<li><a href="promotions.html">2013</a></li>
+						<li><a href="promotions.html">2012</a></li>
+					</ul>
+				</div>
+				<div>
+					<h6>Новости</h6>
+					<ul>
+						<li><a href="news.html">Днепр</a></li>
+						<li><a href="news.html">ПЦУ</a></li>
+						<li><a href="news.html">Общество</a></li>
+						<li><a href="news.html">Спорт</a></li>
+						<li><a href="news.html">Эксклюзив</a></li>
+					</ul>
+				</div>
+				<div>
+					<h6>Соцсети</h6>
+					<ul class="socials">
+						<li><a href="https://www.facebook.com/mbfsolidarnost/">
+							<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.4058 0.00416134L7.81228 0C4.89851 0 3.01551 1.9319 3.01551 4.92203V7.19141H0.407811C0.182475 7.19141 0 7.37409 0 7.59943V10.8875C0 11.1128 0.182683 11.2953 0.407811 11.2953H3.01551V19.5922C3.01551 19.8175 3.19798 20 3.42332 20H6.82563C7.05096 20 7.23344 19.8173 7.23344 19.5922V11.2953H10.2824C10.5078 11.2953 10.6903 11.1128 10.6903 10.8875L10.6915 7.59943C10.6915 7.49123 10.6484 7.38762 10.5721 7.31105C10.4957 7.23448 10.3917 7.19141 10.2835 7.19141H7.23344V5.26763C7.23344 4.34298 7.45378 3.87358 8.65828 3.87358L10.4054 3.87295C10.6305 3.87295 10.813 3.69027 10.813 3.46514V0.411972C10.813 0.187052 10.6308 0.00457747 10.4058 0.00416134Z" fill="#3166BF"/>
+							</svg>
+						</a></li>
+						<li><a href="https://www.instagram.com/mbf_solidarity/">
+							<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.4481 0H6.36436C3.07904 0 0.40625 2.67279 0.40625 5.95811V14.0419C0.40625 17.3272 3.07904 20 6.36436 20H14.4481C17.7335 20 20.4062 17.3272 20.4062 14.0419V5.95811C20.4062 2.67279 17.7334 0 14.4481 0ZM18.3943 14.0419C18.3943 16.2213 16.6275 17.988 14.4481 17.988H6.36436C4.185 17.988 2.41825 16.2213 2.41825 14.0419V5.95811C2.41825 3.77871 4.185 2.012 6.36436 2.012H14.4481C16.6275 2.012 18.3943 3.77871 18.3943 5.95811V14.0419Z" fill="#3166BF"/>
+								<path d="M10.4061 4.82715C7.55387 4.82715 5.2334 7.14762 5.2334 9.99982C5.2334 12.852 7.55387 15.1725 10.4061 15.1725C13.2583 15.1725 15.5788 12.8521 15.5788 9.99982C15.5788 7.14759 13.2583 4.82715 10.4061 4.82715ZM10.4061 13.1606C8.66048 13.1606 7.2454 11.7455 7.2454 9.99986C7.2454 8.25423 8.66052 6.83915 10.4061 6.83915C12.1517 6.83915 13.5668 8.25423 13.5668 9.99986C13.5668 11.7455 12.1517 13.1606 10.4061 13.1606Z" fill="#3166BF"/>
+								<path d="M15.5891 6.10593C16.2736 6.10593 16.8286 5.55099 16.8286 4.86644C16.8286 4.18189 16.2736 3.62695 15.5891 3.62695C14.9045 3.62695 14.3496 4.18189 14.3496 4.86644C14.3496 5.55099 14.9045 6.10593 15.5891 6.10593Z" fill="#3166BF"/>
+							</svg>
+						</a></li>
+						<li><a href="https://www.youtube.com/channel/UCzQECUZYJE7tTvFkLuHC7MQ">
+							<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.2525 0.923828H4.55999C2.26594 0.923828 0.40625 2.78352 0.40625 5.07757V10.9226C0.40625 13.2166 2.26594 15.0763 4.55999 15.0763H16.2525C18.5466 15.0763 20.4062 13.2166 20.4062 10.9226V5.07757C20.4062 2.78352 18.5466 0.923828 16.2525 0.923828ZM13.4434 8.28446L7.97439 10.8928C7.82866 10.9623 7.66033 10.8561 7.66033 10.6947V5.31488C7.66033 5.15115 7.83309 5.04503 7.97912 5.11905L13.4481 7.89045C13.6107 7.97284 13.6079 8.20603 13.4434 8.28446Z" fill="#3166BF"/>
+							</svg>
+						</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main-footer-bottom-line">
+				<p>© 2019. Все права защищены</p>
+				<a href="https://d1.dp.ua/"><img src="img/@2x/d1-footer.png" alt="D1 News">d1.dp.ua</a>
+				<a href="#">Разработано агенством ROVA</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
